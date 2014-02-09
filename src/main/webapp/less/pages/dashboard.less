@@ -1,0 +1,71 @@
+.greenmenu{
+	list-style-type: none;
+	margin: 0;
+	margin-left: 5px;
+	padding: 0;
+	width: 100%;
+}
+
+.greenmenu li {
+	list-style: none;
+}
+
+.greenmenu li:last-child {
+	border: none;
+}
+
+.greenmenu li a {
+	text-decoration: none;
+	display: block;
+	background-color: @lightgreen;
+	border-bottom: 1px solid @vlightgreen;
+	width: 100%;
+	padding:15px;
+	color: @lightgrey;
+}
+
+.greenmenu li a:hover {
+	background-color: @lightorange;
+	border-bottom: 1px solid @vlightgreen;
+	width: 100%;
+	padding:15px;
+	color: @lightgrey;
+}
+
+
+/** left hand menu override **/
+.nav-tabs > li > a {
+	background-color: @white;
+	border-radius: 0 0 0 0;
+}
+.nav-tabs > li > a:hover {
+	color: @white;
+}
+/** Social specific **/
+.nav-tabs > li > form > button { border:none; }
+/** FACEBOOK **/
+.nav-tabs > li.facebook-connect > a:hover { background-color: @darkblue; border-color: @darkblue; }
+.nav-tabs > li.facebook-connect > a { border-left-width: 2px; border-left-color: @darkblue;}
+/** TWITTER **/
+.nav-tabs > li.twitter-connect > a:hover { background-color: @lightblue; border-color: @lightblue; }
+.nav-tabs > li.twitter-connect > a { border-left-width: 2px; border-left-color: @lightblue;}
+/** GOOGLE **/
+.nav-tabs > li.google-connect > a:hover { background-color: @red; border-color: @red; }
+.nav-tabs > li.google-connect > a { border-left-width: 2px; border-left-color: @red;}
+/** LINKEDIN **/
+.nav-tabs > li.linkedin-connect > a:hover { background-color: @darkblue; border-color: @darkblue; }
+.nav-tabs > li.linkedin-connect > a { border-left-width: 2px; border-left-color: @darkblue;}
+/** End Social specific **/
+/** end left hand menu **/
+
+
+/** SOCIAL CAMPAGIN CLASSES**/
+/** FACEBOOK **/
+.nav-tabs > li.facebook-campaign > a,a:hover { background-color: @darkblue; border-color: @darkblue; color: @white; }
+/** TWITTER **/
+.nav-tabs > li.twitter-campaign > a,a:hover { background-color: @lightblue; border-color: @lightblue; color: @white; }
+/** GOOGLE **/
+.nav-tabs > li.google-campaign > a,a:hover { background-color: @red; border-color: @red; color: @white;  }
+/** LINKEDIN **/
+.nav-tabs > li.linkedin-campaign > a,a:hover { background-color: @darkblue; border-color: @darkblue; color: @white;  }
+/** END SOCIAL CAMPAIGN CLASSES**/

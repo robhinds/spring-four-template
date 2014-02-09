@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+	
+	<definition extends="publicpage" name="homepage">
+		<put-attribute name="body" >
+		    <definition template="/WEB-INF/views/home/pageTemplate.jsp">
+				<put-attribute name="header" value="/WEB-INF/views/home/part_fullwidthHeaderImage.jsp" />
+				<put-attribute name="feature" value="/WEB-INF/views/home/part_features.jsp"/>
+		    </definition>
+		</put-attribute>
+	</definition>	
+		
+	<definition extends="loggedinpage" name="dashboard">
+		<put-attribute name="body" >
+		    <definition template="/WEB-INF/views/dashboard/pageTemplate.jsp">
+				<put-attribute name="social-connect-menu" value="/WEB-INF/views/dashboard/part_socialConnectMenu.jsp"/>
+				<put-attribute name="recent-campaigns" value="/WEB-INF/views/dashboard/part_recentCampaigns.jsp"/>
+				<put-attribute name="recent-activity" value="/WEB-INF/views/dashboard/part_recentActivity.jsp"/>
+				<put-attribute name="social-stats" value="/WEB-INF/views/dashboard/part_socialStats.jsp"/>
+		    </definition>
+		</put-attribute>
+	</definition>
+	
+	<definition extends="publicpage" name="signup">
+		<put-attribute name="body" value="/WEB-INF/views/signup/part_registrationForm.jsp"/>
+	</definition>
+	
+	
+	
+	<!-- Error view definitions -->
+	<definition extends="publicpage" name="resourceNotFound">
+		<put-attribute name="body" value="/WEB-INF/views/errors/part_404Error.jsp"/>
+	</definition>
+	<definition extends="publicpage" name="dataAccessFailure">
+		<put-attribute name="body" value="/WEB-INF/views/errors/part_dataAccessFailure.jsp"/>
+	</definition>
+	<definition extends="publicpage" name="uncaughtException">
+		<put-attribute name="body" value="/WEB-INF/views/errors/part_uncaughtException.jsp"/>
+	</definition>
+	<definition extends="publicpage" name="accessDenied">
+		<put-attribute name="body" value="/WEB-INF/views/errors/part_accessDenied.jsp"/>
+	</definition>
+</tiles-definitions>
