@@ -23,7 +23,7 @@ import com.tmm.frm.service.ProfileService;
  * 
  */
 @Controller
-@RequestMapping("/")
+@RequestMapping("/index.html")
 public class HomeController {
 	
 	@Autowired ProfileService profileService; 
